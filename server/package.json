@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Krrish Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "b64-to-blob": "^1.2.19",
+    "base64-blob": "^1.4.1",
+    "based-blob": "^1.0.1",
+    "blob": "^0.1.0",
+    "bluebird": "^3.7.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "find-remove": "^2.0.1",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0",
+    "node-blob": "0.0.2",
+    "request": "^2.88.2"
+  }
+}

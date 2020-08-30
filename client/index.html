@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Face app">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side Face app">
+    <meta itemprop="name" content="Face app">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+
+    <title>Face app</title>
+    <style>
+        #overlay {
+            position: absolute;
+            border: 1px solid red;
+        }
+
+        #overlay table td {
+            font-size: 10px;
+            color: black;
+        }
+
+        .output button {
+            position: relative;
+            bottom: 20px;
+            right: 200px;
+        }
+
+        #startbutton {
+            position: relative;
+            bottom: 20px;
+            right: 200px;
+        }
+
+        #recognise {
+            position: relative;
+            bottom: 20px;
+            right: 200px;
+        }
+    </style>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="contentarea">
+        <div class="camera" style="display: inline;">
+            <video id="video" autoplay playsinline>Video stream not available.</video>
+            <div id="overlay"></div>
+            <button id="startbutton" style="display: inline;">Take photo</button>
+            <button id="recognise" style="display: inline;">Identify</button>
+
+        </div>
+        <div class="output" style="display: inline;">
+            <img id="image1" alt="The screen capture will appear in this box.">
+            <button id="clear1" onclick="">Delete</button>
+        </div>
+        <div class="output" style="display: inline;">
+            <img id="image2" alt="The screen capture will appear in this box.">
+            <button id="clear2">Delete</button>
+        </div>
+        <div class="output" style="display: inline;">
+            <img id="image3" alt="The screen capture will appear in this box.">
+            <button id="clear3">Delete</button>
+        </div>
+        <div class="output" style="display: inline;">
+            <img id="image4" alt="The screen capture will appear in this box.">
+            <button id="clear4">Delete</button>
+        </div>
+        <div class="output" style="display: inline;">
+            <img id="image5" alt="The screen capture will appear in this box.">
+            <button id="clear5">Delete</button>
+        </div>
+        <div id="form">
+            <table>
+                <tr>
+                    <td>Full Name <sup style="color:red">*</sup></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="sex" value="male" checked> Male
+                        <input type="radio" name="sex" value="Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+            </table>
+            <button id="enroll">Enroll</button>
+        </div>
+
+        <canvas id="canvas" style="display:none">
+        </canvas>
+    </div>
+</body>
+
+</html>
