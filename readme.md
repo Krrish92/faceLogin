@@ -1,12 +1,12 @@
-# Hi tech geeks, this is a small app for face enrollment and identify users by face using # microsoft cognitive services, node js and core javascript. 
+<!--
+# Hi tech geeks, this is a small app for face enrollment and identify users by face using # microsoft cognitive services, node js and core javascript. Please follow the # instructions to setup the project on your local development machine.
+--> 
 
-# Setup
-
-Perequisites:
+# Perequisites:
     1. Running mongodb server (For connection, customise server/mongoUtill.js file according you local configuartion)
     2. Node Js
 
-Setup Steps :
+# Setup Steps :
     1. download the sample code (You can download or clone from github)
     2. Go to project directory
     3. Go to server directory
